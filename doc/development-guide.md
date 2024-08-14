@@ -69,3 +69,19 @@ mkdir -p pkg/query-service/config/dashboards
 ------------------
 Successfully remade target file `dev-setup'.
 ```
+
+
+root@lima-ubuntu-lts:/home/myang.linux/workspaces/signoz# make
+make GOARCH=amd64 build-query-service-static
+make[1]: Entering directory '/home/myang.linux/workspaces/signoz'
+------------------
+--> Building query-service static binary
+------------------
+# runtime/cgo
+gcc: error: unrecognized command-line option '-m64'
+make[1]: *** [Makefile:80: build-query-service-static] Error 1
+make[1]: Leaving directory '/home/myang.linux/workspaces/signoz'
+make: *** [Makefile:92: build-query-service-static-amd64] Error 2
+root@lima-ubuntu-lts:/home/myang.linux/workspaces/signoz# 
+
+
