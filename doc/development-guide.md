@@ -1,6 +1,13 @@
 # 基于Signoz的定制开发
 
 
+运行signoz
+
+安装docker 
+
+Install using the apt repository
+https://docs.docker.com/engine/install/ubuntu/
+
 快速安装：
 
 docker compose -f docker/clickhouse-setup/docker-compose.yaml up -d
